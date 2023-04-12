@@ -1,6 +1,12 @@
+#general requirements
 discord.py
 python-dotenv
 asyncio
+#music bot requirements
 ffmpeg
 yt-dlp
 PyNacL
+
+#gpt-3 chatbot requirements
+openai
+requests

@@ -11,3 +11,8 @@ class reminder_cog(commands.Cog):
         await ctx.send(f"Ok, I'll remind you in {time} minutes")
         await asyncio.sleep(int(time)*60)
         await ctx.send(f"Hey {ctx.author.mention}, you asked me to remind you: {reminder}")
+    
+        
+        
+            
+        
