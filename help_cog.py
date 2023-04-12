@@ -43,3 +43,20 @@ class reminderBotHelp(commands.Cog):
             await ctx.send(self.help_message)
         else:
             await ctx.send('Go to reminder-bot channel and type /help-rb')
+
+class chat_cog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+    
+    @commands.Cog.listener()
+    async def on_ready(self):
+        return
+
+    @commands.command(name='help-cb',help='Chat with the bot')
+    async def help(self, ctx):
+        print('Chat bot help is ready')
+        if ctx.channel.name == 'chat-bot':
+            await ctx.send(self.help_message)
+        else:
+            await ctx.send('Go to chat-bot channel and type /help-cb')
+
