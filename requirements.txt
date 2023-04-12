@@ -1,2 +1,6 @@
 discord.py
 python-dotenv
+asyncio
+ffmpeg
+yt-dlp
+PyNacL
