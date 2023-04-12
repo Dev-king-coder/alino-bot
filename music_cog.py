@@ -3,7 +3,6 @@ from discord.ext import commands
 import yt_dlp as youtube_dl
 
 class music_cog(commands.Cog):
-    print("Music Cog Loaded")
     def __init__(self, bot):
         self.bot = bot
 
