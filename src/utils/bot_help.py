@@ -30,7 +30,8 @@ class reminderBotHelp(commands.Cog):
         self.bot = bot
         self.help_message="""
         ```*Reminder Bot Help*\n
-/remind <time-in-minutes> <message> - Reminds you of something after a certain time\n```
+/remind <time-in-minutes> <message> - Reminds you of something after a certain time\n
+/help-rb - Displays help on reminder bot for HELP!/n```
         """
 
     @commands.Cog.listener()
@@ -44,10 +45,16 @@ class reminderBotHelp(commands.Cog):
         else:
             await ctx.send('Go to reminder-bot channel and type /help-rb')
 
-class chat_cog(commands.Cog):
+class chatBotHelp(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
+        self.help_message="""
+        ```
+        *Chat Bot Help*\n
+/chat <message> - Chat with the bot\n
+/help-cb - Displays help on chat bot for HELP!\n ```
+        """
+
     @commands.Cog.listener()
     async def on_ready(self):
         return

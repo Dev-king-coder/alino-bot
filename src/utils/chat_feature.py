@@ -1,5 +1,5 @@
 from discord.ext import commands
-import chatgpt_ai.open_ai as open_ai
+import open_ai
 
 class chat_cog(commands.Cog):
     def __init__(self, bot):
