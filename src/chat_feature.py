@@ -7,5 +7,5 @@ class chat_cog(commands.Cog):
 
     @commands.command(name='chat',aliases=["ai","gpt"] ,help='Chat with the bot')
     async def chat(self, ctx, *, message):
-        bot_response = open_ai.chatgpt_response(prompt=message)
+        bot_response =await open_ai.chatgpt_response(prompt=message)
         await ctx.send(f"Answer: {bot_response}")

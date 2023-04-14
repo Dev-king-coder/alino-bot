@@ -3,9 +3,9 @@ discord.py
 python-dotenv
 asyncio
 #music bot requirements
+spotipy
+PyNaCl
 ffmpeg
-yt-dlp
-PyNacL
 
 #gpt-3 chatbot requirements
 openai

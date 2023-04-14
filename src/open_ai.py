@@ -6,13 +6,13 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-def chatgpt_response(prompt):
-    response = openai.Completion.create(
+async def chatgpt_response(prompt):
+    response =await openai.Completion.create(
         model="text-davinci-003",
         prompt=[{"role": "user", "text": prompt}],
-        max_tokens=0, 
+        max_tokens=100, 
     )
-    new_response=response.choices[0]['message']['content']
+    new_response=response.choices[0]["message"]["text"]
+    return(new_response)
     
-    return response
     

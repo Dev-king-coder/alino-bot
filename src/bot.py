@@ -4,13 +4,13 @@ import asyncio
 from dotenv import load_dotenv
 from discord.ext import commands
 
-from utils.bot_help import musicBotHelp, reminderBotHelp, chatBotHelp
-from utils.music_feature import music_cog
-from utils.reminder_feature import reminder_cog
-from utils.chat_feature import chat_cog
+from bot_help import musicBotHelp, reminderBotHelp, chatBotHelp
+from music_feature import music_cog
+from reminder_feature import reminder_cog
+from chat_feature import chat_cog
 
 load_dotenv()
-
+# genral
 TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='/',intents=discord.Intents.all())
 bot.remove_command('help')
