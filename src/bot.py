@@ -14,7 +14,6 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='/',intents=discord.Intents.all())
 bot.remove_command('help')
-
 @bot.event
 async def setupBot():
     await bot.add_cog(musicBotHelp(bot))
@@ -30,5 +29,11 @@ async def setupBot():
     print('Chat bot setup complete')
 asyncio.run(setupBot())
 
-   
+#error for command not found
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        await ctx.send('Command not found')
+
+
 bot.run(TOKEN)

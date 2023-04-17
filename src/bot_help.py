@@ -24,14 +24,13 @@ class musicBotHelp(commands.Cog):
         else:
             await ctx.send('Go to music-bot channel and type /help-mb for HELP!')
 
-
 class reminderBotHelp(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.help_message="""
         ```*Reminder Bot Help*\n
 /remind <time-in-minutes> <message> - Reminds you of something after a certain time\n
-/help-rb - Displays help on reminder bot for HELP!/n```
+/help-rb - Displays help on reminder bot\n```
         """
 
     @commands.Cog.listener()
