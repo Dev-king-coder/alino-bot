@@ -1,5 +1,5 @@
-# ALino Discord Bot
-Alino is a bot made for discord servers. It's features includes sending reminders, playing music and also chat which is integrated with OpenAI ChatGPT-3.
+# Alino Discord Bot
+Alino is a bot made for Discord servers. Its features include sending reminders, playing music and chatting, integrated with OpenAI ChatGPT-3.
 
 ---
 ## How to install and run
@@ -21,11 +21,11 @@ Alino is a bot made for discord servers. It's features includes sending reminder
 
 ### OpenAI ChatGPT-3 chat bot
 1. bot has a prefix of `/` and takes the command `chat` or `ai` or `gpt`
-2. All these commands returns the reply from the OpenAI ChatGPT-3 API
+2. All these commands return the reply from the OpenAI ChatGPT-3 API
 3. The bot also has a `/help-cd` command which returns the help message
 
 ---
 ### Music bot
 1. bot has a prefix of `/` and takes the command `play` or `p`, which takes `youtube link` as an argument.
-2. The bot also has `/pause`,`/resume`,`/leave`,`/skip`,`/queue` commands
+2. The bot also has `/pause`,`/resume`,`/leave`,`/skip`, and `/queue` commands
 3. The bot also has a `/help-mb` command which returns the help message
